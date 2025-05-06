@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Sterenberg Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <a href="/">Noah S</a>
+        <nav>
+            <a target="_blank" href="https://github.com/sterenbergN"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/noah-sterenberg/"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hello! I'm Noah!</h1>
+                <p>Mechanical Engineer Who Likes Computers</p>
+            </div>
+            <h5 class="intro-description">
+                A mechanical engineer by degree, and a guy who thinks he can do it all by trade. 
+                Based in Houston TX, I love the outdoors, weightlifting, and building things!
+            </h5>
+            <div class="links-container">
+                <a target="_blank" href="mailto:sterenbergN@gmail.com"><i class="fa-solid fa-inbox"></i> Email me</a>
+                <a target="_blank" href="https://github.com/sterenbergN"><i class="fa-brands fa-github"></i> Github</a>
+                <a target="_blank" href="https://www.linkedin.com/in/noah-sterenberg/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+
+            <div id="play-game">
+                <button onclick="playGame()">Change Color?</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Now it's ruined!!!</p>
+                <input type="color" onchange="changeColor()" id="color-picker" value="#0084ff"/>
+                <button onclick="resetColor()" style="display: none;">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>ReactJS | NodeJS</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Data analysis | Machine Learning | Control Systems | Django</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>GIT | Docker</td>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>GIMP | Solidworks | Onshape | KiCad</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>May 6th, 2025</p>
+                        <h4>Personal Portfolio</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Web Development</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>HTML</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>CSS</p>
+                            </div>
+                        </div>
+                        <p>Created this portfolio website to showcase a basic understanding of static web development.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Live</a>
+                            <a target="_blank" href="/">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/web_portfolio/public/portfolio.png" alt="noah-portfolio-thumbnail"/>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>May 6th, 2025</p>
+                        <h4>Workoutagram</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Web Development</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Vite</p>
+                            </div>
+                        </div>
+                        <p>30 day workout challenge website built with Vite using ReactJS. Created following tutorial from <a href="https://github.com/jamezmca">smoljames</a></p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Live</a>
+                            <a target="_blank" href="/">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/web_portfolio/public/dumbbell.png" alt="noah-portfolio-thumbnail"/>
+                    </div>
+                </div>
+
+                <!-- <div class="project-card">
+                    <div>
+                        <p>April 16th, 2025</p>
+                        <h4>Noah Portfolio</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                        </div>
+                        <p>Portfolio website to showcase all projects and skills.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Live</a>
+                            <a target="_blank" href="/">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/web_portfolio/public/car.png" alt="noah-portfolio-thumbnail"/>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a href="" target="_blank">Noah Sterenberg</a></p>
+    </footer>
+    <script>
+        //This is where we are making the color switching happen
+
+        //1. Select HTML Functions
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        //2. Create functions
+        function playGame() {
+            //Enables the play of game by showing color selector input
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor() {
+            // Take users selected color, and assign to background of website
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+            
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+
+        }
+
+        //3. Assign functions to buttons by adding function call to elements
+    </script>
+</body>
+</html>
